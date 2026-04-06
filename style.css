@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0b1c2c;
+    color: white;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background: #081521;
+    padding: 15px;
+    font-size: 22px;
+}
+
+/* CARD */
+.card {
+    background: #132f4c;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* INPUT */
+input, select {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background: cyan;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* MAP */
+#map {
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
