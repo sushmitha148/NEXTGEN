@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Smart Ambulance System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- Leaflet (Map) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <h1>🚑 AI Smart Ambulance System</h1>
+</header>
+
+<!-- NAVBAR -->
+<nav class="main-navbar">
+    <ul>
+        <li class="active">Dashboard</li>
+        <li>Traffic</li>
+        <li>Hospitals</li>
+    </ul>
+</nav>
+
+<!-- MAIN -->
+<div class="main-container">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel card">
+
+        <h3>📍 Emergency Input</h3>
+
+        <input id="location" placeholder="Enter location">
+
+        <select id="traffic">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+
+        <button onclick="findRoute()" class="main-btn">
+            Find Best Route
+        </button>
+
+    </div>
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+
+        <div class="card">
+            <h3>🚑 Transport</h3>
+            <p id="transport">--</p>
+        </div>
+
+        <div class="card">
+            <h3>⏱ Time</h3>
+            <p id="time">--</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Status</h3>
+            <p id="status">Waiting...</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/map.js"></script>
+<script src="js/decision.js"></script>
+<script src="js/simulation.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
